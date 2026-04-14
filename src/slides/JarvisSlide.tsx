@@ -121,10 +121,9 @@ export default function JarvisSlide() {
             >
               {/* Jarvis — circle masked with glow */}
               <div
-                className="w-56 h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden flex-shrink-0"
+                className="w-56 h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-blue-500/20"
                 style={{
                   boxShadow: "0 0 60px rgba(59,130,246,0.25), 0 0 120px rgba(139,92,246,0.15)",
-                  ring: "1px solid rgba(59,130,246,0.2)",
                 }}
               >
                 <img
