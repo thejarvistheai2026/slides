@@ -3,11 +3,17 @@ import { MessageCircle, Radio, AlertCircle, Hash } from "lucide-react";
 import CanvasBg from "../components/CanvasBg";
 import SlideLayout from "../components/SlideLayout";
 
-function OpenClawIcon() {
+function OpenClawIcon({ size = "w-5 h-5" }: { size?: string }) {
   return (
-    <div className="w-5 h-5 bg-white rounded-sm flex items-center justify-center overflow-hidden flex-shrink-0">
+    <div className={`${size} bg-white rounded-sm flex items-center justify-center overflow-hidden flex-shrink-0`}>
       <img src="/openclaw-logo.png" alt="OpenClaw" className="w-4 h-4 object-contain" />
     </div>
+  );
+}
+
+function HermesIcon({ size = "w-4 h-4" }: { size?: string }) {
+  return (
+    <img src="https://hermes-agent.nousresearch.com/icon.png" alt="Hermes" className={`${size} flex-shrink-0 object-contain rounded-sm`} />
   );
 }
 
@@ -73,12 +79,28 @@ export default function SingleAgentSlide() {
                 initial={{ x: -15, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.35 }}
-                className="text-white/40 font-body font-light text-sm md:text-base leading-relaxed mb-10"
+                className="text-white/40 font-body font-light text-sm md:text-base leading-relaxed mb-4"
               >
-                OpenClaw runs as a persistent agent harness reachable via
+                OpenClaw and Hermes both run as persistent agent harnesses reachable via
                 multiple front-ends. One brain, multiple access points. You
                 can start a task in iMessage and continue it in Discord.
               </motion.p>
+
+              <motion.div
+                initial={{ x: -15, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.45 }}
+                className="flex items-center gap-2 mb-8"
+              >
+                <div className="liquid-glass rounded-full px-3 py-1.5 flex items-center gap-2">
+                  <OpenClawIcon size="w-4 h-4" />
+                  <span className="text-xs font-body text-white/60">OpenClaw</span>
+                </div>
+                <div className="liquid-glass rounded-full px-3 py-1.5 flex items-center gap-2">
+                  <HermesIcon size="w-4 h-4" />
+                  <span className="text-xs font-body text-white/60">Hermes</span>
+                </div>
+              </motion.div>
 
               <motion.div
                 initial={{ x: -15, opacity: 0 }}
