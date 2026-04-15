@@ -52,7 +52,7 @@ export default function TitleSlide() {
             transition={{ duration: 0.6, delay: 0.9 }}
             className="text-base md:text-lg text-white/50 font-body font-light leading-relaxed max-w-2xl"
           >
-            90 Days of Experiments &amp; System Building
+            90 Days of Experiments &amp; System Building (Q1 2026)
           </motion.p>
         </div>
 

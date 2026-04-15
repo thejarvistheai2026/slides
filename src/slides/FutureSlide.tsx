@@ -65,6 +65,24 @@ export default function FutureSlide() {
             </motion.h2>
           </>
         }
+        footer={
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+            className="text-xs font-body text-white/40"
+          >
+            Video demo on the right.{" "}
+            <a
+              href="https://x.com/mronge/status/2044074913749983444"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline"
+            >
+              See source here
+            </a>
+          </motion.p>
+        }
 
       >
         {/* Main content */}

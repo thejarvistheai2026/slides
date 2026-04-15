@@ -3,6 +3,18 @@ import { Crown, Code2, Search, PenLine, BarChart2, Megaphone, AlertCircle } from
 import CanvasBg from "../components/CanvasBg";
 import SlideLayout from "../components/SlideLayout";
 
+function OpenClawIcon() {
+  return (
+    <img src="/openclaw-logo.png" alt="OpenClaw" className="w-4 h-4 flex-shrink-0 object-contain rounded-sm" />
+  );
+}
+
+function HermesIcon() {
+  return (
+    <img src="https://hermes-agent.nousresearch.com/icon.png" alt="Hermes" className="w-4 h-4 flex-shrink-0 object-contain rounded-sm" />
+  );
+}
+
 const personas = [
   { icon: Code2,     name: "Dev",      color: "text-cyan-400",    bg: "from-cyan-500/15 to-cyan-500/5",    border: "border-cyan-500/20",    desc: "Code gen, debugging, refactoring" },
   { icon: Search,    name: "Research", color: "text-blue-400",    bg: "from-blue-500/15 to-blue-500/5",    border: "border-blue-500/20",    desc: "Web search, summarization" },
@@ -63,8 +75,24 @@ export default function MultiProfileSlide() {
                 transition={{ duration: 0.5, delay: 0.35 }}
                 className="text-sm font-body font-light text-white/40 leading-relaxed"
               >
-                OpenClaw supports multiple named agent profiles. A main orchestrator routes tasks, while specialist personas handle execution — each with their own system prompt, tools, and context budget.
+                OpenClaw and Hermes both support multiple named agent profiles. A main orchestrator routes tasks, while specialist personas handle execution — each with their own system prompt, tools, and context budget.
               </motion.p>
+
+              <motion.div
+                initial={{ x: -15, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="flex items-center gap-2"
+              >
+                <div className="liquid-glass rounded-full px-3 py-1.5 flex items-center gap-2">
+                  <OpenClawIcon />
+                  <span className="text-xs font-body text-white/60">OpenClaw</span>
+                </div>
+                <div className="liquid-glass rounded-full px-3 py-1.5 flex items-center gap-2">
+                  <HermesIcon />
+                  <span className="text-xs font-body text-white/60">Hermes</span>
+                </div>
+              </motion.div>
 
               <motion.div
                 initial={{ x: -15, opacity: 0 }}
