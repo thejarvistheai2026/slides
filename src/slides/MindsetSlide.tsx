@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Zap, Server, RefreshCw } from "lucide-react";
+import { Zap, Server, RefreshCw, Layers } from "lucide-react";
 import CanvasBg from "../components/CanvasBg";
 import SlideLayout from "../components/SlideLayout";
 
@@ -30,6 +30,15 @@ const shifts = [
     border: "border-emerald-500/20",
     before: "I have a few processes I run for sales, outreach, etc.",
     after: "Build a system where x feeds into y, which inevitably leads to more z, which you turn back into x — and the loop compounds.",
+  },
+  {
+    icon: Layers,
+    label: "Remix",
+    color: "text-amber-400",
+    glow: "from-amber-500/20 to-amber-500/5",
+    border: "border-amber-500/20",
+    before: "Start from scratch",
+    after: "Research, remix, build on existing content from the internet and let the AI generate multiple directions and first drafts. The cost of getting started, exploring more options or going 10% further is now zero.",
   },
 ];
 
@@ -72,7 +81,7 @@ export default function MindsetSlide() {
         }
       >
         <div className="h-full flex flex-col justify-center pt-16">
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-4 gap-4">
             {shifts.map((s, i) => {
               const Icon = s.icon;
               return (
