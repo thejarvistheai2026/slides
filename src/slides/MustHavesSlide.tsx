@@ -29,7 +29,7 @@ const categories = [
     accent: "text-orange-400",
     dot: "bg-orange-400",
     divider: "bg-orange-500/30",
-    items: ["QMD"],
+    items: ["QMD", "Defuddle"],
   },
   {
     label: "Infra",

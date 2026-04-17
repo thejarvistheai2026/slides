@@ -72,11 +72,11 @@ const milestones: Milestone[] = [
     color: "rgba(248,113,113,0.85)",
     dot: "bg-rose-400",
     border: "border-rose-500/20",
-    visual: null,
+    visual: "systems" as const,
   },
 ];
 
-type VisualType = "mode" | "burst" | "pipeline" | "openclaw" | null;
+type VisualType = "mode" | "burst" | "pipeline" | "openclaw" | "systems" | null;
 
 interface Milestone {
   num: string;
@@ -133,6 +133,17 @@ function VisualSlot({ type, num }: { type: VisualType; num: string }) {
         <img
           src="/openclaw-macmini-banner.png"
           alt="OpenClaw Mac mini"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+    );
+  }
+  if (type === "systems") {
+    return (
+      <div className="w-full h-full overflow-hidden">
+        <img
+          src="/systems-orchestration-banner.png"
+          alt="Systems Orchestration"
           className="w-full h-full object-cover object-center"
         />
       </div>
