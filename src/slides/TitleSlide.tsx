@@ -24,7 +24,7 @@ export default function TitleSlide() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col h-full px-10 lg:px-20 py-12 pb-20">
+      <div className="relative z-10 flex flex-col h-full px-6 md:px-10 lg:px-20 py-8 md:py-12 pb-16 md:pb-20">
         {/* Center content */}
         <div className="flex-1 flex flex-col justify-center max-w-4xl">
           {/* Eyebrow */}

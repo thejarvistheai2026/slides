@@ -114,7 +114,7 @@ export default function ComponentsSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-3"
+              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-2 md:mb-3"
             >
               The Stack
             </motion.span>
@@ -122,7 +122,7 @@ export default function ComponentsSlide() {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9]"
+              className="text-xl md:text-3xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9]"
             >
               Three layers. One system.
             </motion.h2>
@@ -131,7 +131,7 @@ export default function ComponentsSlide() {
       >
         {/* Vertically centered, cards with connectors */}
         <div className="h-full flex flex-col justify-center">
-          <div className="flex flex-col lg:flex-row lg:items-stretch">
+          <div className="flex flex-col lg:flex-row lg:items-stretch gap-3 md:gap-0">
             {components.map((c, i) => {
               const Icon = c.icon;
               return (
@@ -140,7 +140,7 @@ export default function ComponentsSlide() {
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.55, delay: 0.35 + i * 0.12 }}
-                    className="liquid-glass rounded-2xl p-4 lg:p-5 flex flex-col gap-3 flex-1"
+                    className="liquid-glass rounded-xl md:rounded-2xl p-3 md:p-4 lg:p-5 flex flex-col gap-2 md:gap-3 flex-1"
                   >
                     <div className={`w-9 h-9 rounded-xl bg-gradient-to-br ${c.glow} flex items-center justify-center flex-shrink-0`}>
                       <Icon className={`w-4 h-4 ${c.color}`} />

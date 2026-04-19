@@ -49,7 +49,7 @@ export default function MultiProfileSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-4"
+              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-2 md:mb-4"
             >
               Multi-Profile
             </motion.span>
@@ -57,7 +57,7 @@ export default function MultiProfileSlide() {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9]"
+              className="text-xl md:text-3xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9]"
             >
               Medium: One Agent Orchestrator, Multiple Agent Profiles.
             </motion.h2>
@@ -65,7 +65,7 @@ export default function MultiProfileSlide() {
         }
       >
         <div className="h-full flex flex-col justify-center">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-4 md:gap-10 lg:gap-16">
 
             {/* ── Left: text ── */}
             <div className="flex-1 max-w-xs flex flex-col gap-6">
@@ -152,7 +152,7 @@ export default function MultiProfileSlide() {
               </div>
 
               {/* Tier 2: Personas */}
-              <div className="grid grid-cols-5 gap-2 w-full">
+              <div className="grid grid-cols-5 gap-1.5 md:gap-2 w-full">
                 {personas.map((p, i) => {
                   const Icon = p.icon;
                   return (
@@ -161,7 +161,7 @@ export default function MultiProfileSlide() {
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.45, delay: 0.4 + i * 0.07 }}
-                      className={`liquid-glass rounded-2xl p-3 flex flex-col gap-2 border ${p.border}`}
+                      className={`liquid-glass rounded-xl md:rounded-2xl p-2 md:p-3 flex flex-col gap-1.5 md:gap-2 border ${p.border}`}
                     >
                       <div className={`w-8 h-8 rounded-xl bg-gradient-to-br ${p.bg} flex items-center justify-center flex-shrink-0`}>
                         <Icon className={`w-3.5 h-3.5 ${p.color}`} />

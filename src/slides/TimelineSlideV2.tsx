@@ -199,13 +199,13 @@ export default function TimelineSlideV2() {
         }
       >
         {/* Visual → Timeline → Cards — vertically centered in remaining space */}
-        <div className="flex-1 flex flex-col justify-start gap-0 pt-16">
+        <div className="flex-1 flex flex-col justify-start gap-0 pt-8 md:pt-16 overflow-y-auto md:overflow-visible">
 
         <motion.div
           initial={{ x: -15, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.35 }}
-          className="mb-4 flex flex-col gap-1"
+          className="mb-2 md:mb-4 flex flex-col gap-1"
         >
           <p className="text-sm font-body font-light text-white/40">As a non-technical vibe coder:</p>
           <ul className="flex flex-col gap-0.5">
@@ -223,14 +223,14 @@ export default function TimelineSlideV2() {
         </motion.div>
 
         {/* Visual row */}
-        <div className="grid grid-cols-5 gap-3 lg:gap-4">
+        <div className="grid grid-cols-5 gap-2 md:gap-3 lg:gap-4">
           {milestones.map((m, i) => (
             <motion.div
               key={i}
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.25 + i * 0.08 }}
-              className={`h-32 lg:h-36 liquid-glass rounded-2xl border ${m.border} overflow-hidden`}
+              className={`h-24 md:h-32 lg:h-36 liquid-glass rounded-xl md:rounded-2xl border ${m.border} overflow-hidden`}
             >
               <VisualSlot type={m.visual} num={m.num} />
             </motion.div>
@@ -238,7 +238,7 @@ export default function TimelineSlideV2() {
         </div>
 
         {/* Timeline axis */}
-        <div className="relative grid grid-cols-5 gap-3 lg:gap-4 my-3">
+        <div className="relative grid grid-cols-5 gap-2 md:gap-3 lg:gap-4 my-2 md:my-3">
           {/* Horizontal line */}
           <div className="absolute left-0 right-0 top-[11px] h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
           {milestones.map((m, i) => (
@@ -261,14 +261,14 @@ export default function TimelineSlideV2() {
         </div>
 
         {/* Card row */}
-        <div className="grid grid-cols-5 gap-3 lg:gap-4">
+        <div className="grid grid-cols-5 gap-2 md:gap-3 lg:gap-4">
           {milestones.map((m, i) => (
             <motion.div
               key={i}
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.55 + i * 0.08 }}
-              className={`liquid-glass rounded-2xl border ${m.border} p-3 lg:p-4 flex flex-col gap-1.5`}
+              className={`liquid-glass rounded-xl md:rounded-2xl border ${m.border} p-2 md:p-3 lg:p-4 flex flex-col gap-1 md:gap-1.5`}
             >
               <p className="text-sm font-heading italic text-white leading-tight">{m.title}</p>
               {m.bullets ? (

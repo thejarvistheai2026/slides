@@ -16,9 +16,9 @@ export default function SlideLayout({
   footer?: React.ReactNode;
 }) {
   return (
-    <div className="relative z-10 flex flex-col h-full px-10 lg:px-20 py-10 lg:py-12">
+    <div className="relative z-10 flex flex-col h-full px-6 md:px-10 lg:px-20 py-6 md:py-10 lg:py-12">
       {/* Zone 1 — Header */}
-      <div className="flex-shrink-0 mb-4">{header}</div>
+      <div className="flex-shrink-0 mb-2 md:mb-4">{header}</div>
 
       {/* Zone 2 — Content */}
       <div className="flex-1 min-h-0">{children}</div>

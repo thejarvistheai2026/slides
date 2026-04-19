@@ -51,13 +51,38 @@
   /* Mobile landscape optimization */
   @media (max-width: 1024px) and (orientation: landscape) {
     html {
-      font-size: 14px;
+      font-size: 13px;
     }
   }
 
-  @media (max-width: 768px) and (orientation: landscape) {
+  @media (max-width: 896px) and (orientation: landscape) {
     html {
-      font-size: 12px;
+      font-size: 11px;
+    }
+  }
+
+  /* Small phones in landscape (iPhone SE, etc) */
+  @media (max-width: 740px) and (orientation: landscape) {
+    html {
+      font-size: 10px;
+    }
+  }
+
+  /* Landscape mobile slide optimizations */
+  @media (max-width: 1024px) and (orientation: landscape) {
+    /* Reduce gaps in grids */
+    .landscape-grid {
+      gap: 0.5rem !important;
+    }
+
+    /* Make cards more compact */
+    .landscape-card {
+      padding: 0.5rem !important;
+    }
+
+    /* Hide decorative elements that take up space */
+    .landscape-hide {
+      display: none !important;
     }
   }
 }

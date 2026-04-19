@@ -116,7 +116,7 @@ export default function GlossarySlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-3"
+              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-2 md:mb-3"
             >
               Glossary
             </motion.span>
@@ -124,7 +124,7 @@ export default function GlossarySlide() {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9]"
+              className="text-xl md:text-3xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9]"
             >
               Key concepts &amp; terminology.
             </motion.h2>
@@ -132,7 +132,7 @@ export default function GlossarySlide() {
         }
       >
         {/* 3 grouped columns */}
-        <div className="flex-1 grid grid-cols-3 gap-5 min-h-0 content-center pt-16">
+        <div className="flex-1 grid grid-cols-3 gap-3 md:gap-5 min-h-0 content-center pt-8 md:pt-16">
           {groups.map((group, gi) => (
             <motion.div
               key={gi}
@@ -161,7 +161,7 @@ export default function GlossarySlide() {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.45, delay: 0.35 + gi * 0.1 + ti * 0.07 }}
-                    className="liquid-glass rounded-2xl p-3 lg:p-4 flex flex-col gap-2"
+                    className="liquid-glass rounded-xl md:rounded-2xl p-2 md:p-3 lg:p-4 flex flex-col gap-1.5 md:gap-2"
                   >
                     <div className="flex items-center gap-2.5">
                       <div className={`w-8 h-8 rounded-xl bg-gradient-to-br ${t.bg} flex items-center justify-center flex-shrink-0`}>
