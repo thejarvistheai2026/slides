@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import SlideControls from "./components/SlideControls";
+import MobileOverlay from "./components/MobileOverlay";
 import TitleSlide from "./slides/TitleSlide";
 import TimelineSlideV2 from "./slides/TimelineSlideV2";
 import GlossarySlide from "./slides/GlossarySlide";
@@ -145,6 +146,8 @@ export default function App() {
         onPrev={() => navigate(-1)}
         onNext={() => navigate(1)}
       />
+
+      <MobileOverlay />
     </div>
   );
 }

@@ -47,6 +47,19 @@
     color: hsl(var(--foreground));
     overflow: hidden;
   }
+
+  /* Mobile landscape optimization */
+  @media (max-width: 1024px) and (orientation: landscape) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    html {
+      font-size: 12px;
+    }
+  }
 }
 
 @layer components {
