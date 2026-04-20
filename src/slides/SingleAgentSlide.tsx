@@ -82,8 +82,7 @@ export default function SingleAgentSlide() {
                 className="text-white/40 font-body font-light text-sm md:text-base leading-relaxed mb-4"
               >
                 OpenClaw and Hermes both run as persistent agent harnesses reachable via
-                multiple front-ends. One brain, multiple access points. You
-                can start a task in iMessage and continue it in Discord.
+                multiple channels.
               </motion.p>
 
               <motion.div
