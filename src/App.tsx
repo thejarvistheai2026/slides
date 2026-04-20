@@ -117,27 +117,32 @@ export default function App() {
 
   return (
     <div
-      className="w-screen h-screen overflow-hidden relative outline-none"
+      className="w-screen h-screen overflow-hidden relative outline-none bg-black"
       tabIndex={0}
       onWheel={handleWheel}
       onKeyDown={handleKey}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      <AnimatePresence custom={dir} mode="wait">
-        <motion.div
-          key={index}
-          custom={dir}
-          variants={variants}
-          initial="enter"
-          animate="center"
-          exit="exit"
-          transition={{ duration: 0.65, ease: [0.4, 0, 0.2, 1] }}
-          className="absolute inset-0"
-        >
-          <CurrentSlide />
-        </motion.div>
-      </AnimatePresence>
+      {/* 16:9 Aspect Ratio Container */}
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full aspect-video max-h-screen">
+          <AnimatePresence custom={dir} mode="wait">
+            <motion.div
+              key={index}
+              custom={dir}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{ duration: 0.65, ease: [0.4, 0, 0.2, 1] }}
+              className="w-full h-full"
+            >
+              <CurrentSlide />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div>
 
       <SlideControls
         current={index}
