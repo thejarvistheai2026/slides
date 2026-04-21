@@ -69,7 +69,7 @@ export default function TimelineSlide() {
             initial={{ x: -15, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-4"
+            className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-4"
           >
             The Journey
           </motion.span>
@@ -100,16 +100,16 @@ export default function TimelineSlide() {
                   <div className="flex items-center gap-1.5">
                     <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${ev.dot}`} />
                     <span
-                      className="text-[9px] font-body font-semibold uppercase tracking-[0.15em]"
+                      className="text-[13px] font-body font-semibold uppercase tracking-[0.15em]"
                       style={{ color: ev.color }}
                     >
                       {ev.date}
                     </span>
                   </div>
-                  <p className="text-xs lg:text-sm font-heading italic text-white leading-tight">
+                  <p className="text-base lg:text-lg font-heading italic text-white leading-tight">
                     {ev.title}
                   </p>
-                  <p className="text-[10px] font-body font-light text-white/40 leading-relaxed">
+                  <p className="text-[14px] font-body text-white/40 leading-relaxed">
                     {ev.desc}
                   </p>
                 </motion.div>
@@ -133,7 +133,7 @@ export default function TimelineSlide() {
                       alt="Burst app"
                       className="w-14 h-14 rounded-2xl drop-shadow-lg group-hover:scale-105 transition-transform duration-200"
                     />
-                    <span className="text-[9px] font-body font-semibold tracking-[0.18em] uppercase text-emerald-400/60 group-hover:text-emerald-400 transition-colors flex items-center gap-1">
+                    <span className="text-[13px] font-body font-semibold tracking-[0.18em] uppercase text-emerald-400/60 group-hover:text-emerald-400 transition-colors flex items-center gap-1">
                       Burst
                       <svg viewBox="0 0 12 12" className="w-2.5 h-2.5 opacity-60 group-hover:opacity-100 transition-opacity">
                         <path d="M2 10 L10 2 M5 2 L10 2 L10 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
@@ -190,16 +190,16 @@ export default function TimelineSlide() {
                   <div className="flex items-center gap-1.5">
                     <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${ev.dot}`} />
                     <span
-                      className="text-[9px] font-body font-semibold uppercase tracking-[0.15em]"
+                      className="text-[13px] font-body font-semibold uppercase tracking-[0.15em]"
                       style={{ color: ev.color }}
                     >
                       {ev.date}
                     </span>
                   </div>
-                  <p className="text-xs lg:text-sm font-heading italic text-white leading-tight">
+                  <p className="text-base lg:text-lg font-heading italic text-white leading-tight">
                     {ev.title}
                   </p>
-                  <p className="text-[10px] font-body font-light text-white/40 leading-relaxed">
+                  <p className="text-[14px] font-body text-white/40 leading-relaxed">
                     {ev.desc}
                   </p>
                 </motion.div>
@@ -223,7 +223,7 @@ export default function TimelineSlide() {
                       alt="Mode iOS app"
                       className="w-14 h-14 rounded-2xl drop-shadow-lg group-hover:scale-105 transition-transform duration-200"
                     />
-                    <span className="text-[9px] font-body font-semibold tracking-[0.18em] uppercase text-[#3ECFF0]/60 group-hover:text-[#3ECFF0] transition-colors flex items-center gap-1">
+                    <span className="text-[13px] font-body font-semibold tracking-[0.18em] uppercase text-[#3ECFF0]/60 group-hover:text-[#3ECFF0] transition-colors flex items-center gap-1">
                       Mode
                       <svg viewBox="0 0 12 12" className="w-2.5 h-2.5 opacity-60 group-hover:opacity-100 transition-opacity">
                         <path d="M2 10 L10 2 M5 2 L10 2 L10 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>

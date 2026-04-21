@@ -33,7 +33,7 @@ function LogoBadge({ icon, name }: { icon: React.ReactNode; name: string }) {
   return (
     <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-white/6 border border-white/10">
       {icon}
-      <span className="text-[11px] font-body font-medium text-white/55">{name}</span>
+      <span className="text-[15px] font-body font-medium text-white/55">{name}</span>
     </div>
   );
 }
@@ -80,7 +80,7 @@ export default function ClaudeVsOpenSourceSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-3"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-3"
             >
               Claude vs Open Source
             </motion.span>
@@ -106,7 +106,7 @@ export default function ClaudeVsOpenSourceSlide() {
               className="flex-1 liquid-glass rounded-2xl p-4 lg:p-5 border border-blue-500/15 flex flex-col gap-2.5"
             >
               <div className="flex items-center justify-between">
-                <p className="text-[10px] font-body font-semibold uppercase tracking-[0.2em] text-blue-400">
+                <p className="text-[14px] font-body font-semibold uppercase tracking-[0.2em] text-blue-400">
                   Closed · Polished
                 </p>
                 <div className="flex items-center gap-1.5">
@@ -118,7 +118,7 @@ export default function ClaudeVsOpenSourceSlide() {
                 {closedPoints.map((pt, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <div className="w-1 h-1 rounded-full bg-blue-400/60 mt-2 flex-shrink-0" />
-                    <span className="text-sm font-body font-light text-white/60 leading-relaxed">{pt}</span>
+                    <span className="text-base font-body text-white/60 leading-relaxed">{pt}</span>
                   </div>
                 ))}
               </div>
@@ -132,7 +132,7 @@ export default function ClaudeVsOpenSourceSlide() {
               className="flex-1 liquid-glass rounded-2xl p-4 lg:p-5 border border-emerald-500/15 flex flex-col gap-2.5"
             >
               <div className="flex items-center justify-between">
-                <p className="text-[10px] font-body font-semibold uppercase tracking-[0.2em] text-emerald-400">
+                <p className="text-[14px] font-body font-semibold uppercase tracking-[0.2em] text-emerald-400">
                   Open · Local · Private
                 </p>
                 <div className="flex items-center gap-1.5">
@@ -144,7 +144,7 @@ export default function ClaudeVsOpenSourceSlide() {
                 {ossPoints.map((pt, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <div className="w-1 h-1 rounded-full bg-emerald-400/60 mt-2 flex-shrink-0" />
-                    <span className="text-sm font-body font-light text-white/60 leading-relaxed">{pt}</span>
+                    <span className="text-base font-body text-white/60 leading-relaxed">{pt}</span>
                   </div>
                 ))}
               </div>
@@ -167,7 +167,7 @@ export default function ClaudeVsOpenSourceSlide() {
 
               {/* Quote */}
               <div className="border-l-2 border-white/15 pl-3">
-                <p className="text-[11px] font-body font-light text-white/40 leading-relaxed italic">
+                <p className="text-[15px] font-body text-white/40 leading-relaxed italic">
                   "Crypto: Not your keys, not your crypto.
                   <br />
                   AI: Not your memory, not your agent."
@@ -183,7 +183,7 @@ export default function ClaudeVsOpenSourceSlide() {
                 ].map(({ label, desc }, i) => (
                   <div key={i} className="flex items-start gap-2">
                     <div className="w-1 h-1 rounded-full bg-white/25 mt-1.5 flex-shrink-0" />
-                    <p className="text-[11px] font-body font-light text-white/45 leading-relaxed">
+                    <p className="text-[15px] font-body text-white/45 leading-relaxed">
                       <span className="text-white/60 font-medium">{label}</span>
                       {" — "}
                       {desc}
@@ -213,7 +213,7 @@ export default function ClaudeVsOpenSourceSlide() {
                   <Zap className="w-3.5 h-3.5 text-amber-400" />
                 </div>
                 <div>
-                  <p className="text-[10px] font-body font-semibold uppercase tracking-[0.25em] text-amber-400/60 mb-1">
+                  <p className="text-[14px] font-body font-semibold uppercase tracking-[0.25em] text-amber-400/60 mb-1">
                     Trend to watch
                   </p>
                   <h3 className="text-base font-heading italic text-white leading-tight mb-2">
@@ -227,7 +227,7 @@ export default function ClaudeVsOpenSourceSlide() {
                     ].map((pt, i) => (
                       <div key={i} className="flex items-start gap-2">
                         <div className="w-1 h-1 rounded-full bg-amber-400/50 mt-1.5 flex-shrink-0" />
-                        <p className="text-xs font-body font-light text-white/45 leading-relaxed">{pt}</p>
+                        <p className="text-sm font-body text-white/45 leading-relaxed">{pt}</p>
                       </div>
                     ))}
                   </div>

@@ -49,7 +49,7 @@ export default function MultiProfileSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-2 md:mb-4"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-2 md:mb-4"
             >
               Multi-Profile
             </motion.span>
@@ -73,7 +73,7 @@ export default function MultiProfileSlide() {
                 initial={{ x: -15, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.35 }}
-                className="text-sm font-body font-light text-white/40 leading-relaxed"
+                className="text-base font-body text-white/40 leading-relaxed"
               >
                 OpenClaw and Hermes both support multiple named agent profiles. A main orchestrator routes tasks, while specialist personas handle execution — each with their own system prompt, tools, and context budget.
               </motion.p>
@@ -86,11 +86,11 @@ export default function MultiProfileSlide() {
               >
                 <div className="liquid-glass rounded-full px-3 py-1.5 flex items-center gap-2">
                   <OpenClawIcon />
-                  <span className="text-xs font-body text-white/60">OpenClaw</span>
+                  <span className="text-sm font-body text-white/60">OpenClaw</span>
                 </div>
                 <div className="liquid-glass rounded-full px-3 py-1.5 flex items-center gap-2">
                   <HermesIcon />
-                  <span className="text-xs font-body text-white/60">Hermes</span>
+                  <span className="text-sm font-body text-white/60">Hermes</span>
                 </div>
               </motion.div>
 
@@ -99,10 +99,10 @@ export default function MultiProfileSlide() {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.45 }}
               >
-                <p className="text-[10px] text-white/25 uppercase tracking-[0.2em] font-body mb-2">
+                <p className="text-[14px] text-white/25 uppercase tracking-[0.2em] font-body mb-2">
                   Why this matters
                 </p>
-                <p className="text-xs font-body font-light text-white/40 leading-relaxed">
+                <p className="text-sm font-body text-white/40 leading-relaxed">
                   Each persona has isolated context and tailored instructions. Your Dev agent doesn't muddy its context with GTM tasks. Cleaner outputs, better focus.
                 </p>
               </motion.div>
@@ -114,7 +114,7 @@ export default function MultiProfileSlide() {
                 className="liquid-glass rounded-xl px-4 py-3 mt-[10px] flex items-start gap-3"
               >
                 <AlertCircle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
-                <p className="text-xs font-body font-light text-white/40">
+                <p className="text-sm font-body text-white/40">
                   <span className="text-white/60 font-medium">Orchestrator context limit:</span>{" "}
                   All routing still passes through one orchestrator window. For true parallel execution, see Paperclip.
                 </p>
@@ -136,7 +136,7 @@ export default function MultiProfileSlide() {
                 </div>
                 <div>
                   <p className="text-sm font-body font-semibold text-white">Main Orchestrator</p>
-                  <p className="text-[10px] font-body text-white/30 uppercase tracking-wider mt-0.5">
+                  <p className="text-[14px] font-body text-white/30 uppercase tracking-wider mt-0.5">
                     Routes · Delegates · Synthesizes
                   </p>
                 </div>
@@ -167,10 +167,10 @@ export default function MultiProfileSlide() {
                         <Icon className={`w-3.5 h-3.5 ${p.color}`} />
                       </div>
                       <div>
-                        <p className={`text-[10px] font-body font-semibold uppercase tracking-[0.15em] mb-0.5 ${p.color}`}>
+                        <p className={`text-[14px] font-body font-semibold uppercase tracking-[0.15em] mb-0.5 ${p.color}`}>
                           {p.name}
                         </p>
-                        <p className="text-[10px] font-body font-light text-white/35 leading-relaxed">
+                        <p className="text-[14px] font-body text-white/35 leading-relaxed">
                           {p.desc}
                         </p>
                       </div>

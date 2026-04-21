@@ -51,20 +51,20 @@
   /* Mobile landscape optimization */
   @media (max-width: 1024px) and (orientation: landscape) {
     html {
-      font-size: 13px;
+      font-size: 15px;
     }
   }
 
   @media (max-width: 896px) and (orientation: landscape) {
     html {
-      font-size: 11px;
+      font-size: 13px;
     }
   }
 
   /* Small phones in landscape (iPhone SE, etc) */
   @media (max-width: 740px) and (orientation: landscape) {
     html {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 

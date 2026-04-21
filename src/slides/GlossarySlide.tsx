@@ -116,7 +116,7 @@ export default function GlossarySlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-2 md:mb-3"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-2 md:mb-3"
             >
               Glossary
             </motion.span>
@@ -145,10 +145,10 @@ export default function GlossarySlide() {
               <div className="flex items-center gap-2.5 pb-2">
                 <div className={`h-4 w-0.5 rounded-full ${group.divider}`} />
                 <div>
-                  <span className={`text-[11px] font-body font-semibold uppercase tracking-[0.2em] ${group.accent}`}>
+                  <span className={`text-[15px] font-body font-semibold uppercase tracking-[0.2em] ${group.accent}`}>
                     {group.label}
                   </span>
-                  <p className="text-[10px] font-body text-white/25 mt-0.5">{group.subtitle}</p>
+                  <p className="text-[14px] font-body text-white/25 mt-0.5">{group.subtitle}</p>
                 </div>
               </div>
 
@@ -167,11 +167,11 @@ export default function GlossarySlide() {
                       <div className={`w-8 h-8 rounded-xl bg-gradient-to-br ${t.bg} flex items-center justify-center flex-shrink-0`}>
                         <Icon className={`w-3.5 h-3.5 ${t.color}`} />
                       </div>
-                      <span className="text-sm font-body font-semibold text-white whitespace-nowrap">
+                      <span className="text-base font-body font-semibold text-white whitespace-nowrap">
                         {t.term}
                       </span>
                     </div>
-                    <p className="text-[11px] font-body font-light text-white/40 leading-relaxed pl-[42px]">
+                    <p className="text-[15px] font-body text-white/40 leading-relaxed pl-[42px]">
                       {t.def}
                     </p>
                   </motion.div>

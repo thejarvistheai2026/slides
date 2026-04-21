@@ -80,7 +80,7 @@ export default function PrinciplesSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-4"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-4"
             >
               Framework
             </motion.span>
@@ -88,15 +88,15 @@ export default function PrinciplesSlide() {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9]"
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading italic text-white tracking-tight leading-[0.9]"
             >
               Principles for working with AI.
             </motion.h2>
           </>
         }
       >
-        <div className="h-full flex flex-col justify-center pt-16">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="h-full flex flex-col justify-center pt-16 xl:pt-20">
+          <div className="grid grid-cols-2 gap-4 xl:gap-6 2xl:gap-8">
             {principles.map((p, i) => {
               const Icon = p.icon;
               return (
@@ -105,26 +105,26 @@ export default function PrinciplesSlide() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                  className={`liquid-glass rounded-2xl p-4 lg:p-5 flex flex-col gap-3 border ${p.border}`}
+                  className={`liquid-glass rounded-2xl p-4 lg:p-5 xl:p-6 flex flex-col gap-3 xl:gap-4 border ${p.border}`}
                 >
                   <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className={`w-9 h-9 rounded-xl bg-gradient-to-br ${p.glow} flex items-center justify-center flex-shrink-0`}>
-                        <Icon className={`w-4 h-4 ${p.color}`} />
+                    <div className="flex items-center gap-3 xl:gap-4">
+                      <div className={`w-9 h-9 xl:w-10 xl:h-10 rounded-xl bg-gradient-to-br ${p.glow} flex items-center justify-center flex-shrink-0`}>
+                        <Icon className={`w-4 h-4 xl:w-5 xl:h-5 ${p.color}`} />
                       </div>
-                      <h3 className="text-base font-heading italic text-white leading-tight">
+                      <h3 className="text-base xl:text-lg font-heading italic text-white leading-tight">
                         {p.title}
                       </h3>
                     </div>
-                    <span className={`text-[10px] font-body font-semibold uppercase tracking-[0.2em] ${p.color} flex-shrink-0 ml-3 mt-1`}>
+                    <span className={`text-[14px] font-body font-semibold uppercase tracking-[0.2em] ${p.color} flex-shrink-0 ml-3 mt-1`}>
                       {p.num}
                     </span>
                   </div>
-                  <div className="space-y-1.5">
+                  <div className="space-y-1.5 xl:space-y-2">
                     {p.bullets.map((b, bi) => (
                       <div key={bi} className="flex items-start gap-2">
                         <div className={`w-1 h-1 rounded-full mt-1.5 flex-shrink-0 ${p.color} opacity-60`} />
-                        <p className="text-xs font-body font-light text-white/45 leading-relaxed">{b}</p>
+                        <p className="text-sm xl:text-base font-body text-white/45 leading-relaxed">{b}</p>
                       </div>
                     ))}
                   </div>
@@ -138,10 +138,10 @@ export default function PrinciplesSlide() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.75 }}
-            className="liquid-glass rounded-xl px-4 py-3 mt-4 flex items-start gap-3 w-fit mx-auto"
+            className="liquid-glass rounded-xl px-4 xl:px-6 py-3 xl:py-4 mt-4 xl:mt-6 flex items-start gap-3 w-fit mx-auto"
           >
-            <AlertCircle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
-            <p className="text-xs font-body font-light text-white/40">
+            <AlertCircle className="w-4 h-4 xl:w-5 xl:h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+            <p className="text-sm xl:text-base font-body text-white/40">
               <span className="text-white/60 font-medium">Principles for working with a personal agent:</span>{" "}
               Treat like a hire — onboard for a specific role and function. Does take some initial time and energy investment.
             </p>

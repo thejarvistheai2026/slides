@@ -92,7 +92,7 @@ export default function MustHavesSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-4"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-4"
             >
               Setup
             </motion.span>
@@ -120,7 +120,7 @@ export default function MustHavesSlide() {
                 {/* Category header */}
                 <div className="flex items-center gap-2 pb-1">
                   <div className={`h-3.5 w-0.5 rounded-full ${cat.divider}`} />
-                  <span className={`text-[10px] font-body font-semibold uppercase tracking-[0.2em] ${cat.accent}`}>
+                  <span className={`text-[14px] font-body font-semibold uppercase tracking-[0.2em] ${cat.accent}`}>
                     {cat.label}
                   </span>
                 </div>
@@ -130,7 +130,7 @@ export default function MustHavesSlide() {
                   {cat.items.map((item, ii) => (
                     <div key={ii} className="flex items-start gap-2">
                       <div className={`w-1 h-1 rounded-full mt-[5px] flex-shrink-0 opacity-40 ${cat.dot}`} />
-                      <span className="text-[11px] font-body font-light text-white/50 leading-snug">{item}</span>
+                      <span className="text-[15px] font-body text-white/50 leading-snug">{item}</span>
                     </div>
                   ))}
                 </div>

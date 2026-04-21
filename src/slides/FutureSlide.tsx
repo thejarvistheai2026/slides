@@ -51,7 +51,7 @@ export default function FutureSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-4"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-4"
             >
               Headless. Always on. Always yours.
             </motion.span>
@@ -70,7 +70,7 @@ export default function FutureSlide() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.7 }}
-            className="text-xs font-body text-white/40"
+            className="text-base font-body text-white/40"
           >
             Video demo on the right.{" "}
             <a
@@ -101,10 +101,10 @@ export default function FutureSlide() {
                 >
                   <div className="flex items-start justify-between mb-2">
                     <div>
-                      <span className={`text-[10px] font-body font-semibold uppercase tracking-[0.2em] ${t.color}`}>
+                      <span className={`text-[14px] font-body font-semibold uppercase tracking-[0.2em] ${t.color}`}>
                         {t.label}
                       </span>
-                      <p className="text-base font-heading italic text-white mt-0.5">
+                      <p className="text-lg font-heading italic text-white mt-0.5">
                         {t.title}
                       </p>
                     </div>
@@ -112,7 +112,7 @@ export default function FutureSlide() {
                       <Icon className={`w-4 h-4 ${t.color}`} />
                     </div>
                   </div>
-                  <p className="text-xs font-body font-light text-white/40 leading-relaxed flex-1 overflow-hidden">
+                  <p className="text-base font-body text-white/40 leading-relaxed flex-1 overflow-hidden">
                     {t.desc}
                   </p>
                 </motion.div>

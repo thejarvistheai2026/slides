@@ -183,7 +183,7 @@ export default function TimelineSlideV2() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-3"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-3"
             >
               The Journey
             </motion.span>
@@ -207,14 +207,14 @@ export default function TimelineSlideV2() {
           transition={{ duration: 0.5, delay: 0.35 }}
           className="mb-2 md:mb-4 flex flex-col gap-1"
         >
-          <p className="text-sm font-body font-light text-white/40">As a non-technical vibe coder:</p>
+          <p className="text-base font-body text-white/40">As a non-technical vibe coder:</p>
           <ul className="flex flex-col gap-0.5">
             {[
               "Full-stack web and mobile apps with a variety of technologies",
               "GTM, sales and internal dashboards with Gadget",
               "Personal agent configuration with a variety of skills powering workflows",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-2 text-sm font-body font-light text-white/40">
+              <li key={item} className="flex items-start gap-2 text-base font-body text-white/40">
                 <span className="mt-[5px] w-1 h-1 rounded-full bg-white/25 flex-shrink-0" />
                 {item}
               </li>
@@ -251,7 +251,7 @@ export default function TimelineSlideV2() {
             >
               <div className={`w-[9px] h-[9px] rounded-full flex-shrink-0 ${m.dot} ring-[3px] ring-[#020817]`} />
               <span
-                className="text-[8px] lg:text-[9px] font-body font-semibold uppercase tracking-[0.14em] text-center leading-tight"
+                className="text-[14px] lg:text-[15px] font-body font-semibold uppercase tracking-[0.14em] text-center leading-tight"
                 style={{ color: m.color }}
               >
                 {m.date}
@@ -270,25 +270,25 @@ export default function TimelineSlideV2() {
               transition={{ duration: 0.5, delay: 0.55 + i * 0.08 }}
               className={`liquid-glass rounded-xl md:rounded-2xl border ${m.border} p-2 md:p-3 lg:p-4 flex flex-col gap-1 md:gap-1.5`}
             >
-              <p className="text-sm font-heading italic text-white leading-tight">{m.title}</p>
+              <p className="text-lg font-heading italic text-white leading-tight">{m.title}</p>
               {m.bullets ? (
                 <ul className="flex flex-col gap-0.5">
                   {m.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-1.5 text-[10px] font-body font-light text-white/40 leading-relaxed">
+                    <li key={b} className="flex items-start gap-1.5 text-[14px] font-body text-white/40 leading-relaxed">
                       <span className="mt-[5px] w-1 h-1 rounded-full bg-white/25 flex-shrink-0" />
                       {b}
                     </li>
                   ))}
                 </ul>
               ) : (
-                <p className="text-[10px] font-body font-light text-white/40 leading-relaxed">{m.desc}</p>
+                <p className="text-[14px] font-body text-white/40 leading-relaxed">{m.desc}</p>
               )}
               {m.link && (
                 <a
                   href={m.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] font-body text-white/30 hover:text-white/70 transition-colors mt-0.5 flex items-center gap-1 w-fit"
+                  className="text-[14px] font-body text-white/30 hover:text-white/70 transition-colors mt-0.5 flex items-center gap-1 w-fit"
                 >
                   Learn more here
                   <svg viewBox="0 0 12 12" className="w-2.5 h-2.5 flex-shrink-0">

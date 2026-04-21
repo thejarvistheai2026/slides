@@ -18,7 +18,7 @@ function LogoBadge({ icon, name }: { icon: React.ReactNode; name: string }) {
   return (
     <div className="flex items-center gap-1.5 px-2 py-1.5 rounded-xl bg-white/6 border border-white/10">
       {icon}
-      <span className="text-[10px] font-body font-medium text-white/55">{name}</span>
+      <span className="text-[14px] font-body font-medium text-white/55">{name}</span>
     </div>
   );
 }
@@ -34,9 +34,9 @@ function MacMiniAsset() {
       <img
         src="/macmini.png"
         alt="Mac mini M4"
-        className="w-32 h-32 lg:w-40 lg:h-40 object-contain drop-shadow-2xl"
+        className="w-32 h-32 lg:w-40 lg:h-40 xl:w-52 xl:h-52 object-contain drop-shadow-2xl"
       />
-      <span className="text-[10px] font-body font-semibold uppercase tracking-[0.2em] text-white/25">
+      <span className="text-[14px] font-body font-semibold uppercase tracking-[0.2em] text-white/25">
         Mac mini M4
       </span>
     </motion.div>
@@ -93,7 +93,7 @@ export default function MacMiniSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-3"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-3"
             >
               Mac mini Setup
             </motion.span>
@@ -101,15 +101,15 @@ export default function MacMiniSlide() {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9]"
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading italic text-white tracking-tight leading-[0.9]"
             >
               One Mac mini. Two worlds.
             </motion.h2>
           </>
         }
       >
-        <div className="h-full flex flex-col justify-center gap-4">
-          <div className="grid grid-cols-[1fr_auto_1fr] gap-5 lg:gap-8 items-center">
+        <div className="h-full flex flex-col justify-center gap-4 xl:gap-6">
+          <div className="grid grid-cols-[1fr_auto_1fr] gap-5 lg:gap-8 xl:gap-16 items-center">
 
             {/* Left card — Stable */}
             <motion.div
@@ -127,22 +127,22 @@ export default function MacMiniSlide() {
                 </div>
                 <div className="flex items-start justify-between">
                   <div>
-                    <span className={`text-[10px] font-body font-semibold uppercase tracking-[0.2em] ${users[0].color}`}>
+                    <span className={`text-[14px] font-body font-semibold uppercase tracking-[0.2em] ${users[0].color}`}>
                       {users[0].label}
                     </span>
                     <p className="text-lg font-heading italic text-white mt-0.5">{users[0].title}</p>
-                    <p className="text-[10px] font-body text-white/30">{users[0].subtitle}</p>
+                    <p className="text-[14px] font-body text-white/30">{users[0].subtitle}</p>
                   </div>
                   <div className={`w-8 h-8 rounded-xl bg-gradient-to-br ${users[0].glow} flex items-center justify-center flex-shrink-0`}>
                     <ShieldCheck className={`w-4 h-4 ${users[0].color}`} />
                   </div>
                 </div>
-                <p className="text-xs font-body font-light text-white/40 leading-relaxed">{users[0].desc}</p>
+                <p className="text-base font-body text-white/40 leading-relaxed">{users[0].desc}</p>
                 <div className="space-y-1.5">
                   {users[0].tools.map((t) => (
                     <div key={t} className="flex items-center gap-2">
                       <div className="w-1 h-1 rounded-full bg-blue-400/60 flex-shrink-0" />
-                      <span className="text-[11px] font-body font-light text-white/50">{t}</span>
+                      <span className="text-[15px] font-body text-white/50">{t}</span>
                     </div>
                   ))}
                 </div>
@@ -168,22 +168,22 @@ export default function MacMiniSlide() {
                 </div>
                 <div className="flex items-start justify-between">
                   <div>
-                    <span className={`text-[10px] font-body font-semibold uppercase tracking-[0.2em] ${users[1].color}`}>
+                    <span className={`text-[14px] font-body font-semibold uppercase tracking-[0.2em] ${users[1].color}`}>
                       {users[1].label}
                     </span>
                     <p className="text-lg font-heading italic text-white mt-0.5">{users[1].title}</p>
-                    <p className="text-[10px] font-body text-white/30">{users[1].subtitle}</p>
+                    <p className="text-[14px] font-body text-white/30">{users[1].subtitle}</p>
                   </div>
                   <div className={`w-8 h-8 rounded-xl bg-gradient-to-br ${users[1].glow} flex items-center justify-center flex-shrink-0`}>
                     <FlaskConical className={`w-4 h-4 ${users[1].color}`} />
                   </div>
                 </div>
-                <p className="text-xs font-body font-light text-white/40 leading-relaxed">{users[1].desc}</p>
+                <p className="text-base font-body font-light text-white/40 leading-relaxed">{users[1].desc}</p>
                 <div className="space-y-1.5">
                   {users[1].tools.map((t) => (
                     <div key={t} className="flex items-center gap-2">
                       <div className="w-1 h-1 rounded-full bg-violet-400/60 flex-shrink-0" />
-                      <span className="text-[11px] font-body font-light text-white/50">{t}</span>
+                      <span className="text-[15px] font-body text-white/50">{t}</span>
                     </div>
                   ))}
                 </div>
@@ -206,7 +206,7 @@ export default function MacMiniSlide() {
             ].map(({ icon: Icon, text }, i) => (
               <div key={i} className="flex items-center gap-2">
                 <Icon className="w-3.5 h-3.5 text-white/30 flex-shrink-0" />
-                <span className="text-[11px] font-body font-light text-white/35">{text}</span>
+                <span className="text-[15px] font-body text-white/35">{text}</span>
               </div>
             ))}
           </motion.div>

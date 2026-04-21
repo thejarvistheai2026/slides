@@ -54,7 +54,7 @@ export default function SingleAgentSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-4"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-4"
             >
               Single Agent
             </motion.span>
@@ -62,7 +62,7 @@ export default function SingleAgentSlide() {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9] mb-6"
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading italic text-white tracking-tight leading-[0.9] mb-6 xl:mb-8"
             >
               Simple: One agent, everywhere.
             </motion.h2>
@@ -71,15 +71,15 @@ export default function SingleAgentSlide() {
       >
         {/* Outer: fills content zone height, centers the row block vertically */}
         <div className="h-full flex flex-col justify-center">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-20 -mt-5">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16 xl:gap-24 -mt-5 xl:-mt-8">
 
             {/* ── Left: description ── */}
-            <div className="flex-1 max-w-xl">
+            <div className="flex-1 max-w-xl xl:max-w-2xl">
               <motion.p
                 initial={{ x: -15, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.35 }}
-                className="text-white/40 font-body font-light text-sm md:text-base leading-relaxed mb-4"
+                className="text-white/40 font-body text-base md:text-base xl:text-lg leading-relaxed mb-4 xl:mb-6"
               >
                 OpenClaw and Hermes both run as persistent agent harnesses reachable via
                 multiple channels.
@@ -93,11 +93,11 @@ export default function SingleAgentSlide() {
               >
                 <div className="liquid-glass rounded-full px-3 py-1.5 flex items-center gap-2">
                   <OpenClawIcon size="w-4 h-4" />
-                  <span className="text-xs font-body text-white/60">OpenClaw</span>
+                  <span className="text-base font-body text-white/60">OpenClaw</span>
                 </div>
                 <div className="liquid-glass rounded-full px-3 py-1.5 flex items-center gap-2">
                   <HermesIcon size="w-4 h-4" />
-                  <span className="text-xs font-body text-white/60">Hermes</span>
+                  <span className="text-base font-body text-white/60">Hermes</span>
                 </div>
               </motion.div>
 
@@ -110,7 +110,7 @@ export default function SingleAgentSlide() {
                 {features.map((f, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <div className="w-1 h-1 rounded-full bg-blue-400 mt-2 flex-shrink-0" />
-                    <span className="text-sm font-body font-light text-white/50">{f}</span>
+                    <span className="text-base font-body text-white/50">{f}</span>
                   </div>
                 ))}
               </motion.div>
@@ -122,7 +122,7 @@ export default function SingleAgentSlide() {
                 className="liquid-glass rounded-xl px-4 py-3 mt-[42px] flex items-start gap-3"
               >
                 <AlertCircle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
-                <p className="text-xs font-body font-light text-white/40">
+                <p className="text-base font-body text-white/40">
                   <span className="text-white/60 font-medium">Shared context limit:</span>{" "}
                   Multi-stream conversations share one context window. High
                   conversation volume = context pressure. Solved in slide 7
@@ -136,7 +136,7 @@ export default function SingleAgentSlide() {
               initial={{ x: 30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.38 }}
-              className="w-full lg:w-[400px] flex-shrink-0 flex flex-col lg:ml-20"
+              className="w-full lg:w-[400px] xl:w-[480px] flex-shrink-0 flex flex-col lg:ml-20 xl:ml-28"
             >
 
               {/* ── Tier 1: OpenClaw ←→ Obsidian ── */}
@@ -148,8 +148,8 @@ export default function SingleAgentSlide() {
                     <OpenClawIcon />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-sm font-body font-semibold text-white whitespace-nowrap">OpenClaw</p>
-                    <p className="text-[10px] font-body font-light text-white/40">Agent harness</p>
+                    <p className="text-base font-body font-semibold text-white whitespace-nowrap">OpenClaw</p>
+                    <p className="text-[14px] font-body text-white/40">Agent harness</p>
                   </div>
                 </div>
 
@@ -170,8 +170,8 @@ export default function SingleAgentSlide() {
                     <ObsidianIcon />
                   </div>
                   <div>
-                    <p className="text-xs font-body font-semibold text-white whitespace-nowrap">Obsidian</p>
-                    <p className="text-[10px] font-body text-white/30">Memory / Brain</p>
+                    <p className="text-base font-body font-semibold text-white whitespace-nowrap">Obsidian</p>
+                    <p className="text-[14px] font-body text-white/30">Memory / Brain</p>
                   </div>
                 </div>
               </div>
@@ -195,9 +195,9 @@ export default function SingleAgentSlide() {
                     <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-500/15 to-blue-500/5 flex items-center justify-center flex-shrink-0">
                       <MessageCircle className="w-4 h-4 text-blue-400" />
                     </div>
-                    <p className="text-sm font-body font-semibold text-white">iMessage</p>
+                    <p className="text-base font-body font-semibold text-white">iMessage</p>
                   </div>
-                  <p className="text-[11px] font-body font-light text-white/40 leading-relaxed">
+                  <p className="text-[13px] font-body text-white/40 leading-relaxed">
                     Personal async comms. Ask questions, trigger workflows, get summaries.
                   </p>
                 </div>
@@ -209,9 +209,9 @@ export default function SingleAgentSlide() {
                       <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-500/15 to-indigo-500/5 flex items-center justify-center flex-shrink-0">
                         <Radio className="w-4 h-4 text-indigo-400" />
                       </div>
-                      <p className="text-sm font-body font-semibold text-white">Discord</p>
+                      <p className="text-base font-body font-semibold text-white">Discord</p>
                     </div>
-                    <p className="text-[11px] font-body font-light text-white/40 leading-relaxed">
+                    <p className="text-[13px] font-body text-white/40 leading-relaxed">
                       Team channels. Shared context, multi-user access to the same agent.
                     </p>
                   </div>
@@ -233,7 +233,7 @@ export default function SingleAgentSlide() {
                         className="liquid-glass rounded-xl py-1.5 px-1 flex items-center justify-center gap-1"
                       >
                         <Hash className="w-2.5 h-2.5 text-indigo-400/50 flex-shrink-0" />
-                        <span className="text-[9px] font-body font-medium text-white/35 truncate">{ch}</span>
+                        <span className="text-[13px] font-body font-medium text-white/35 truncate">{ch}</span>
                       </div>
                     ))}
                   </div>

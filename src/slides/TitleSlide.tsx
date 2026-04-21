@@ -32,7 +32,7 @@ export default function TitleSlide() {
             initial={{ x: -15, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-5"
+            className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-5"
           >
             A Founder's Field Guide
           </motion.span>
@@ -50,7 +50,7 @@ export default function TitleSlide() {
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.9 }}
-            className="text-base md:text-lg text-white/50 font-body font-light leading-relaxed max-w-2xl"
+            className="text-xl md:text-2xl text-white/50 font-body leading-relaxed max-w-2xl"
           >
             90 Days of Experiments &amp; System Building (Q1 2026)
           </motion.p>
@@ -63,14 +63,14 @@ export default function TitleSlide() {
           transition={{ duration: 0.6, delay: 1.4 }}
           className="flex items-center gap-6"
         >
-          <span className="text-white/20 text-xs font-body uppercase tracking-[0.2em]">
+          <span className="text-white/20 text-sm font-body uppercase tracking-[0.2em]">
             Covers
           </span>
           <div className="w-px h-4 bg-white/10" />
           {tools.map((t) => (
             <span
               key={t}
-              className="text-base md:text-lg font-heading italic text-white/25"
+              className="text-lg md:text-xl font-heading italic text-white/25"
             >
               {t}
             </span>

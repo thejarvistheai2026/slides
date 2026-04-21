@@ -45,7 +45,7 @@ function LogoBadge({ icon, name }: { icon: React.ReactNode; name: string }) {
   return (
     <div className="flex items-center gap-1.5 px-2 py-1.5 rounded-xl bg-white/6 border border-white/10">
       {icon}
-      <span className="text-[10px] font-body font-medium text-white/55">{name}</span>
+      <span className="text-[14px] font-body font-medium text-white/55">{name}</span>
     </div>
   );
 }
@@ -114,7 +114,7 @@ export default function ComponentsSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-2 md:mb-3"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-2 md:mb-3"
             >
               The Stack
             </motion.span>
@@ -147,15 +147,15 @@ export default function ComponentsSlide() {
                     </div>
 
                     <div>
-                      <p className={`text-[10px] font-body font-semibold uppercase tracking-[0.2em] mb-1 ${c.color}`}>
+                      <p className={`text-[14px] font-body font-semibold uppercase tracking-[0.2em] mb-1 ${c.color}`}>
                         {c.subtitle}
                       </p>
-                      <h3 className="text-base lg:text-lg font-heading italic text-white leading-tight">
+                      <h3 className="text-lg lg:text-lg font-heading italic text-white leading-tight">
                         {c.name}
                       </h3>
                     </div>
 
-                    <p className="text-xs font-body font-light text-white/40 leading-relaxed flex-1">
+                    <p className="text-base font-body text-white/40 leading-relaxed flex-1">
                       {c.desc}
                     </p>
 

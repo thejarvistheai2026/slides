@@ -58,7 +58,7 @@ export default function PaperclipSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-4"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-4"
             >
               Paperclip
             </motion.span>
@@ -90,7 +90,7 @@ export default function PaperclipSlide() {
                 <div className="w-2.5 h-2.5 rounded-full bg-white/15" />
               </div>
               <div className="flex-1 mx-4 bg-white/8 rounded-md px-3 py-1 flex items-center">
-                <span className="text-[10px] font-body text-white/30">Paperclip</span>
+                <span className="text-[14px] font-body text-white/30">Paperclip</span>
               </div>
             </div>
             {/* Screenshot */}
@@ -108,7 +108,7 @@ export default function PaperclipSlide() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="text-sm font-body font-light text-white/45 leading-relaxed flex-shrink-0 text-center"
+            className="text-lg font-body text-white/45 leading-relaxed flex-shrink-0 text-center"
           >
             <a href="https://paperclip.ing/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-white/60 hover:text-white/90 transition-colors">
               Paperclip
@@ -133,14 +133,14 @@ export default function PaperclipSlide() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="liquid-glass rounded-2xl p-5 lg:p-6"
           >
-            <p className="text-[10px] text-white/25 uppercase tracking-[0.2em] font-body mb-4">
+            <p className="text-[14px] text-white/25 uppercase tracking-[0.2em] font-body mb-4">
               Why Paperclip
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {benefits.map(({ icon: Icon, text }, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <Icon className="w-4 h-4 text-white/40 flex-shrink-0 mt-0.5" />
-                  <span className="text-xs font-body font-light text-white/50 leading-relaxed">
+                  <span className="text-lg font-body text-white/50 leading-relaxed">
                     {text}
                   </span>
                 </div>

@@ -65,7 +65,7 @@ export default function MindsetSlide() {
               initial={{ x: -15, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="block text-white/30 font-body text-[10px] tracking-[0.3em] uppercase mb-4"
+              className="block text-white/30 font-body text-[14px] tracking-[0.3em] uppercase mb-4"
             >
               Framework
             </motion.span>
@@ -73,15 +73,15 @@ export default function MindsetSlide() {
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-heading italic text-white tracking-tight leading-[0.9]"
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading italic text-white tracking-tight leading-[0.9]"
             >
               Mindset shift.
             </motion.h2>
           </>
         }
       >
-        <div className="h-full flex flex-col justify-center pt-16">
-          <div className="grid grid-cols-4 gap-4">
+        <div className="h-full flex flex-col justify-center pt-16 xl:pt-20">
+          <div className="grid grid-cols-4 gap-4 xl:gap-6">
             {shifts.map((s, i) => {
               const Icon = s.icon;
               return (
@@ -90,22 +90,22 @@ export default function MindsetSlide() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.3 + i * 0.12 }}
-                  className={`liquid-glass rounded-2xl p-4 lg:p-5 flex flex-col gap-4 border ${s.border}`}
+                  className={`liquid-glass rounded-2xl p-4 lg:p-5 xl:p-6 flex flex-col gap-4 xl:gap-5 border ${s.border}`}
                 >
                   {/* Header */}
-                  <div className="flex items-center gap-3">
-                    <div className={`w-9 h-9 rounded-xl bg-gradient-to-br ${s.glow} flex items-center justify-center flex-shrink-0`}>
-                      <Icon className={`w-4 h-4 ${s.color}`} />
+                  <div className="flex items-center gap-3 xl:gap-4">
+                    <div className={`w-9 h-9 xl:w-10 xl:h-10 rounded-xl bg-gradient-to-br ${s.glow} flex items-center justify-center flex-shrink-0`}>
+                      <Icon className={`w-4 h-4 xl:w-5 xl:h-5 ${s.color}`} />
                     </div>
-                    <span className={`text-[10px] font-body font-semibold uppercase tracking-[0.2em] ${s.color}`}>
+                    <span className={`text-[14px] xl:text-base font-body font-semibold uppercase tracking-[0.2em] ${s.color}`}>
                       {s.label}
                     </span>
                   </div>
 
                   {/* Before */}
                   <div className="flex flex-col gap-1.5">
-                    <span className="text-[9px] font-body font-semibold uppercase tracking-[0.2em] text-white/20">Before</span>
-                    <p className="text-xs font-body font-light text-white/35 leading-relaxed italic">
+                    <span className="text-[15px] xl:text-base font-body font-semibold uppercase tracking-[0.2em] text-white/20">Before</span>
+                    <p className="text-sm xl:text-base font-body text-white/35 leading-relaxed italic">
                       "{s.before}"
                     </p>
                   </div>
@@ -121,8 +121,8 @@ export default function MindsetSlide() {
 
                   {/* After */}
                   <div className="flex flex-col gap-1.5">
-                    <span className="text-[9px] font-body font-semibold uppercase tracking-[0.2em] text-white/20">Shift</span>
-                    <p className="text-xs font-body font-light text-white/60 leading-relaxed">
+                    <span className="text-[15px] xl:text-base font-body font-semibold uppercase tracking-[0.2em] text-white/20">Shift</span>
+                    <p className="text-sm xl:text-base font-body text-white/60 leading-relaxed">
                       {s.after}
                     </p>
                   </div>
