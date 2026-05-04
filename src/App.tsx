@@ -16,6 +16,7 @@ import PrinciplesSlide from "./slides/PrinciplesSlide";
 import MindsetSlide from "./slides/MindsetSlide";
 import JarvisSlide from "./slides/JarvisSlide";
 import MustHavesSlide from "./slides/MustHavesSlide";
+import SkillsSlide from "./slides/SkillsSlide";
 
 const SLIDES = [
   { component: TitleSlide, label: "Introduction" },
@@ -32,6 +33,7 @@ const SLIDES = [
   { component: MindsetSlide, label: "Mindset Shift" },
   { component: JarvisSlide, label: "Meet Jarvis" },
   { component: MustHavesSlide, label: "Must-Haves" },
+  { component: SkillsSlide, label: "Skills" },
 ];
 
 const variants = {
