@@ -10,7 +10,7 @@ const skills = [
     color: "text-cyan-400",
     glow: "from-cyan-500/20 to-cyan-500/5",
     border: "border-cyan-500/20",
-    workflow: "workflow: drop link into chat, Agent runs workflow:",
+    workflow: "drop link into chat, Agent runs workflow:",
     bullets: [
       "Step 1: use defuddle/etc to extract raw content outline (tweets, posts, transcript)",
       "Step 2: create summary (what are the 10 key points I need to know to walk away with full understanding in 5mins?)",
@@ -23,7 +23,7 @@ const skills = [
     color: "text-violet-400",
     glow: "from-violet-500/20 to-violet-500/5",
     border: "border-violet-500/20",
-    workflow: "workflow: ask to draft blog post, Agent runs workflow:",
+    workflow: "ask to draft blog post, Agent runs workflow:",
     bullets: [
       "Use all Obsidian notes, keywords, ideas to propose & draft multiple angles of a blog post",
       "Run through humanizer + voice guide for style",
@@ -35,7 +35,7 @@ const skills = [
     color: "text-emerald-400",
     glow: "from-emerald-500/20 to-emerald-500/5",
     border: "border-emerald-500/20",
-    workflow: "workflow: ask to publish blog post, Agent runs workflow:",
+    workflow: "ask to publish blog post, Agent runs workflow:",
     bullets: [
       "Automatically create a cover image with Images 2.0, store in Cloudinary, add URL back to Obsidian article",
       "Run through all the other steps to move the post into production on my site",
@@ -49,10 +49,7 @@ const librarian = {
   color: "text-amber-400",
   glow: "from-amber-500/20 to-amber-500/5",
   border: "border-amber-500/20",
-  description: "A special skill, the guardian of knowledge in the Obsidian vault",
-  bullets: [
-    "runs once per day and cleans, tags, establish backlinks, condenses content",
-  ],
+  description: "A special skill, the guardian of knowledge in the Obsidian vault — runs once per day to clean, tag, establish backlinks, and condense content.",
 };
 
 export default function SkillsSlide() {
@@ -155,19 +152,10 @@ export default function SkillsSlide() {
                 </h3>
               </div>
 
-              {/* Description and bullets */}
-              <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 flex-1">
-                <p className="text-[11px] md:text-[13px] font-body text-white/50 italic">
-                  {librarian.description}
-                </p>
-                <div className="hidden md:block w-px h-4 bg-white/20" />
-                <div className="flex items-start gap-2">
-                  <div className={`w-1 h-1 rounded-full mt-1.5 flex-shrink-0 ${librarian.color} opacity-60`} />
-                  <p className="text-[11px] md:text-[13px] font-body text-white/45 leading-relaxed">
-                    {librarian.bullets[0]}
-                  </p>
-                </div>
-              </div>
+              {/* Description */}
+              <p className="text-[11px] md:text-[13px] font-body text-white/50 italic leading-relaxed">
+                {librarian.description}
+              </p>
             </div>
           </motion.div>
         </div>
