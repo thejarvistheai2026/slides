@@ -32,8 +32,8 @@ const SLIDES = [
   { component: PrinciplesSlide, label: "Principles" },
   { component: MindsetSlide, label: "Mindset Shift" },
   { component: JarvisSlide, label: "Meet Jarvis" },
-  { component: MustHavesSlide, label: "Must-Haves" },
   { component: SkillsSlide, label: "Skills" },
+  { component: MustHavesSlide, label: "Must-Haves" },
 ];
 
 const variants = {
